@@ -62,23 +62,24 @@ function App() {
   //  }
 
   return (
-    <>  
+    <div> 
     {/* <Router>  */}
   <Navbar title="Textutils" mode={mode} onToggle={toggleMode} />
-  <Alert alert={alert} /> 
+  <Alert alert={alert} />  
   <div className='container my-3'>
       {/*  <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
   {/* <Routes> */}
   {/* <Route exact path="/about" element={ <About/> } /> */}
   {/* <Route exact path="/" element={ */}
-  <TextForm heading="Enter the text to analyze" mode={mode}  showAlert={showAlert}/>
+  <TextForm heading="Enter the text to analyze" mode={mode} showAlert={showAlert}  />                
+    
 
   {/* } />   */}
  {/* </Routes> */}
   </div>  
   {/* </Router> */}
-  </>
+  </div>
   );
 
   }
